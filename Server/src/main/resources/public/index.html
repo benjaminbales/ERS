@@ -1,0 +1,62 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Javalin Test</title>
+
+</head>
+
+<body>
+<!--    <h2>Make reservation:</h2>-->
+<!--    <form method="post" action="/make-reservation">-->
+<!--        Choose day-->
+<!--        <select name="day">-->
+<!--            <option value="saturday">Saturday</option>-->
+<!--            <option value="sunday">Sunday</option>-->
+<!--        </select>-->
+<!--        <br>-->
+<!--        Choose time-->
+<!--        <select name="time">-->
+<!--            <option value="8:00 PM">8:00 PM</option>-->
+<!--            <option value="9:00 PM">9:00 PM</option>-->
+<!--        </select>-->
+<!--        <br>-->
+<!--        <button>Submit</button>-->
+<!--    </form>-->
+
+<!--    <h2>Check your reservation:</h2>-->
+<!--    <form method="get" action="/check-reservation">-->
+<!--        Choose day-->
+<!--        <select name="day">-->
+<!--            <option value="saturday">Saturday</option>-->
+<!--            <option value="sunday">Sunday</option>-->
+<!--        </select>-->
+<!--        <br>-->
+<!--        <button>Submit</button>-->
+<!--    </form>-->
+
+    <h2>Create Employee:</h2>
+    <form method="post" action="/create-employee">
+        <label for="firstname">First name:</label><br>
+        <input type="text" id="firstname" name="firstName" value="John"><br>
+        <label for="lastname">Last name:</label><br>
+        <input type="text" id="lastname" name="lastName" value="Doe"><br>
+        <label for="username">username:</label><br>
+        <input type="text" id="username" name="username" value="username"><br>
+        <label for="password">password:</label><br>
+        <input type="password" id="password" name="password" value="password"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <h2>Find Employee:</h2>
+    <form method="get" action="find-employee">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="firstName" value="John"><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lastName" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

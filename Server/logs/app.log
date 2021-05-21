@@ -1,0 +1,54 @@
+2021-05-19 10:51:32,633 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+2021-05-19 10:51:32,711 INFO c.m.d.l.SLF4JLogger [cluster-ClusterId{value='60a525f4d080a7667ba5b28b', description='null'}-localhost:27017] Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:128) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117) [mongo-java-driver-3.12.8.jar:?]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_281]
+Caused by: java.net.ConnectException: Connection refused (Connection refused)
+	at java.net.PlainSocketImpl.socketConnect(Native Method) ~[?:1.8.0_281]
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:476) ~[?:1.8.0_281]
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:218) ~[?:1.8.0_281]
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:200) ~[?:1.8.0_281]
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:394) ~[?:1.8.0_281]
+	at java.net.Socket.connect(Socket.java:606) ~[?:1.8.0_281]
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79) ~[mongo-java-driver-3.12.8.jar:?]
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65) ~[mongo-java-driver-3.12.8.jar:?]
+	... 3 more
+2021-05-19 10:51:32,763 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:52:02,786 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findOne null in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:52:02,794 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:52:32,829 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: create ReimbursementRequest{amount='100', timestamp='2021-05-19T14:51:32.715Z', employeeId='609c222d0814b7564789732c', managerId=609c222d0814b7564789732c', status=Pending', id=null} in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:52:32,830 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:53:02,835 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findOne null in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:53:02,836 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:53:32,847 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: create ReimbursementRequest{amount='200', timestamp='2021-05-19T14:51:32.715Z', employeeId='609c222d0814b7564789732c', managerId=609c222d0814b7564789732c', status=Approved', id=null} in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:53:32,848 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:54:02,853 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findOne null in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:54:02,854 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:54:32,863 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: create ReimbursementRequest{amount='300', timestamp='2021-05-19T14:51:32.715Z', employeeId='609c222d0814b7564789732c', managerId=609c222d0814b7564789732c', status=Denied', id=null} in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:54:32,870 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:55:02,878 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findAll Operator Filter{fieldName='_id', operator='$exists', value=BsonBoolean{value=true}} in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:55:02,886 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:55:32,891 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findAll Operator Filter{fieldName='_id', operator='$exists', value=BsonBoolean{value=true}} in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:55:32,895 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:56:02,902 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findOne null in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:56:02,902 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:56:32,907 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: create ReimbursementRequest{amount='100', timestamp='2021-05-19T14:55:32.894Z', employeeId='609c222d0814b7564789732c', managerId=609c222d0814b7564789732c', status=Pending', id=null} in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:56:32,908 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:57:02,913 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findOne null in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:57:02,914 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:57:32,919 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: create ReimbursementRequest{amount='200', timestamp='2021-05-19T14:55:32.894Z', employeeId='609c222d0814b7564789732c', managerId=609c222d0814b7564789732c', status=Approved', id=null} in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:57:32,919 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:58:02,925 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findOne null in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:58:02,926 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:58:32,928 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: create ReimbursementRequest{amount='300', timestamp='2021-05-19T14:55:32.894Z', employeeId='609c222d0814b7564789732c', managerId=609c222d0814b7564789732c', status=Denied', id=null} in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:58:32,934 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:59:02,938 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findAll Operator Filter{fieldName='_id', operator='$exists', value=BsonBoolean{value=true}} in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:59:02,945 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 10:59:32,946 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findAll Operator Filter{fieldName='_id', operator='$exists', value=BsonBoolean{value=true}} in db: ers collection: reimbursementrequeststest.
+2021-05-19 10:59:32,959 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 11:00:02,970 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findAll Operator Filter{fieldName='_id', operator='$exists', value=BsonBoolean{value=true}} in db: ers collection: reimbursementrequeststest.
+2021-05-19 11:00:02,974 INFO c.m.d.l.SLF4JLogger [Test worker] Cluster description not yet available. Waiting for 30000 ms before timing out
+2021-05-19 11:00:32,976 DEBUG c.e.d.MongoReimbursementRequestDao [Test worker] Operation Failed: findAll Operator Filter{fieldName='_id', operator='$exists', value=BsonBoolean{value=true}} in db: ers collection: reimbursementrequeststest.
