@@ -1,19 +1,19 @@
-# ERS
-## Employee Reimbursement System Revature
+#  Employee Reimbursement System Revature
 
-## Overview
-- A full stack web application that allows Employees to submit tickets and Administrator to approve or deny them.
+## Project Description
+ERS is a full stack web application that enables two types of user, an employee and a manager, to login and perform various actions.  Employees can submit new reimbursement requests, view their pending and resolved requests, and update their personal information.  Managers can view all pending and resolved  requests for all employees in the system and approve or deny them.  They can also filter by the employee ID to see the requests for individuals and empoyees, and they can register new employees.
 
-## Technologies
+## Technologies Used
 - Java 1.8
-- Javalin/ Servlets
-- JDBC
-- MongoDB
+- Javalin 3.13.6
+- Mongo JDBC 3.12.8
+- MongoDB 4.4.4
+- JUnit 4.12
+- SLF4J 1.7.12
 - HTML/CSS/Javascript
-- React
-- Axios
-- JUnit
-- SLF4J
+- NodeJS 6.14.12
+- React 17.0.2
+- Axios 0.21.1
 
 ## Features
 - An Employee can login
