@@ -80,7 +80,7 @@ To install the client and server applications, click on the follow links to inst
 
 12) This automatically opens a tab in your default web browser at http://localhost:3000.  If not, then copy/past the link in your browser, and you should see the following:
 
-
+![ERS Home Screen](/ERSHome.png?raw=true "ERS Home Screen")
 
 ## Usage
 
