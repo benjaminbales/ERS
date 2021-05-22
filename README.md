@@ -99,4 +99,4 @@ To install the client and server applications, click on the follow links to inst
 
 ## License
 
-This project uses the following license: [<MIT License>](<LICENSE>).
+This project uses the following license:[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
