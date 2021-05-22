@@ -96,3 +96,7 @@ To install the client and server applications, click on the follow links to inst
 
 ## Contributors
 [Benjamin Bales](https://github.com/benjaminbales)
+
+## License
+
+This project uses the following license: [<MIT License>](<license.txt>).
