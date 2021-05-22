@@ -50,13 +50,22 @@ To install the client and server applications, click on the follow links to inst
 5) [MongoDB](https://docs.mongodb.com/manual/installation/)
 
 6) Open a terminal or powershell and clone this repo:
+
 ```git clone https://github.com/benjaminbales/ERS.git```
 
 7) Navigate to your home directory and enter the following command to start MongoDB:
-```mongod --dbpath mongo-data-dir/```
 
-8) Open the Client application in VS Code.
-9) Open a terminal in VS Code and enter the follow commands:
+```mongod --dbpath mongo-data/```
+
+8) Create the application database, and intialize the "managers" collection a single document by entering the following commands in a terminal or powershell:
+
+```mongo```
+
+```use ers```
+
+```db.managers.insertOne({"firstName" : "Bob", "lastName" : "Dole", "password" : "bob", "username" : "bob"})```
+
+10) Open the Client application in VS Code, open a terminal in VS Code, and enter the follow commands:
 
 ```cd app```
 
@@ -71,7 +80,7 @@ To install the client and server applications, click on the follow links to inst
 
 12) This automatically opens a tab in your default web browser at http://localhost:3000.  If not, then copy/past the link in your browser, and you should see the following:
 
-[screenshot]
+
 
 ## Usage
 
